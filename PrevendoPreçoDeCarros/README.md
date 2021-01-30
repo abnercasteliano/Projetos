@@ -18,4 +18,4 @@ Mercedez Benz C class com 4 anos de uso e 45.000 KM rodados: preço de venda R$ 
 
 BMW X5 com 7 anos de uso e 86.000 KM rodados: preço de venda R$ 17.630,50
 
-Acurácio do modelo de Machine Learning: 85%
+Acurácia do modelo de Machine Learning: 85%
