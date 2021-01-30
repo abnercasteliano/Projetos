@@ -8,7 +8,7 @@ O objetivo do projeto é prever se uma pessoa pode ter diabetes ou não, conside
 
 ## [Previsão do preço de carros](https://github.com/abnercasteliano/Projetos/tree/master/PrevendoPre%C3%A7oDeCarros)
 
-O objetivo é implementar um algoritmo de Machine Learning adequado e responder algumas questões de negócio:
+O objetivo é implementar um algoritmo de Machine Learning adequado e responder às questões de negócio:
 
 1)	Prever o preço de um Mercedez Benz com 4 anos de uso e quilometragem rodada de 45.000 KM.
 2)	Prever o preço de uma BMW X5 com 7 anos de uso e quilometragem de 86.000 KM.
