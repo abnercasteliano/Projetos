@@ -1,6 +1,6 @@
 # Previsão do preço de carros
 
-O DataSet 'carprices.csv' contém os dados de três modelos de carros, a quilometragem percorrida, os anos de uso e o preço de venda.
+O DataSet 'carprice.xlsx' contém os dados de três modelos de carros, a quilometragem percorrida, os anos de uso e o preço de venda.
 O objetivo é implementar um algoritmo de Machine Learning adequado e responder às questões de negócio:
 
 1)	Prever o preço de um Mercedez Benz com 4 anos de uso e quilometragem rodada de 45.000 KM.
