@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5764ae9a-4378-491c-9191-4eded5e57f33" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../PrevendoDoençaCardíaca/.ipynb_checkpoints/heart_predicting-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../PrevendoDoençaCardíaca/.ipynb_checkpoints/heart_predicting-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrevendoDoençaCardíaca/LogisticRegression.sav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrevendoDoençaCardíaca/heart_predicting.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../PrevendoDoençaCardíaca/heart_predicting.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrevendoPreçoDeCarros/.ipynb_checkpoints/car_price_predicting-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrevendoPreçoDeCarros/Exercício.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrevendoPreçoDeCarros/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrevendoPreçoDeCarros/car_price_predicting.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrevendoPreçoDeCarros/carprice.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrevendoPreçoDeCarros/linear_reg_modelo.pkl" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1qGzr6JO8K5kFdZLxMyUVGm46SF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5764ae9a-4378-491c-9191-4eded5e57f33" name="Default Changelist" comment="" />
+      <created>1616720911115</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616720911115</updated>
+    </task>
+    <servers />
+  </component>
+</project>

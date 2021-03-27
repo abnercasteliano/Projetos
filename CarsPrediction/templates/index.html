@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+</head>
+
+<body>
+
+    <div style="color:black;font-family: helvetica;">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h1 style="color:MintCream;">Previsão do preço</h1>
+            <p style="color:black;font-size:smaller;">Preencha os campos abaixo para que o algoritmo consiga prever o preço de venda do veículo.</p>
+            <h3>Ano do veículo:</h3>
+            <input id="first" name="Year" type="number ">
+            <h3>Preço de mercado do veículo?</h3><br><input id="second" name="Present_Price" required="required">
+            <h3>Quilômetragem rodada?</h3><input id="third" name="Kms_Driven" required="required">
+            <h3>Quantos donos o veículo teve? (0 ou 1 ou 3) ?</h3><br><input id="fourth" name="Owner" required="required">
+            <h3>Selecione o tipo de combustível:</h3><br><select name="Fuel_Type_Petrol" id="fuel" required="required">
+                <option value="Petrol">Gasolina/Álcool</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Diesel">Gás Natural</option>
+            </select>
+            <h3>Você é pessoa física ou jurídica?</h3><br><select name="Seller_Type_Individual" id="resea" required="required">
+                <option value="Dealer">Jurídica</option>
+                <option value="Individual">Física</option>
+            </select>
+            <h3>Transmissão do veículo:</h3><br><select name="Transmission_Mannual" id="research" required="required">
+                <option value="Mannual">Manual</option>
+                <option value="Automatic">Automático</option>
+            </select>
+            <br><br><button id="sub" type="submit ">Calcular preço!</button>
+            <br>
+        </form>
+	    <br><br>
+	    <h2 style="color: #2d7d25"> {{prediction_texts}} </h2>
+    </div>
+
+    <style>
+    	h1 {
+    		background-color: SkyBlue;
+ 			width: 300px;
+ 			height: 30px;
+  		    border: 3px solid powderblue;
+  		    padding: 30px;
+  		    text-align:center;
+  		    position: relative;
+            margin: auto;
+	    }
+
+	    h2 {
+    		background-color: #9cffd4;
+ 			width: 600px;
+ 			height: 30px;
+  		    border: 4px solid powderblue;
+  		    padding: 30px;
+  		    text-align:center;
+  		    position: relative;
+            margin: auto;
+	    }
+
+        body {
+            background-color: MintCream;
+            text-align: center;
+            padding: auto;
+        }
+        
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: white;
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: auto;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 150px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #fuel:hover {
+            background-color: white;
+        }
+        
+        #research {
+            width: 115px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: white;
+        }
+        
+        #resea {
+            width: 115px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: white;
+        }
+        
+        #sub {
+            width: 100px;
+            height: 47px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: SkyBlue;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
