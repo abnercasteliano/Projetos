@@ -6,6 +6,6 @@ Repositório contendo alguns projetos de Machine Learning e Data Science.
 
 O objetivo do projeto é prever se uma pessoa pode ter diabetes ou não, considerando uma acurácia de 70 por cento.
 
-## [Previsão do preço de carros](https://github.com/abnercasteliano/Projetos/tree/master/CarsPrediction)
+## [Vehicle Price prediction](https://github.com/abnercasteliano/Projetos/tree/master/carspriceprediction)
 
 O objetivo do projeto é criar um modelo de Machine Learning para prever o preço de venda do veículo de acordo com algumas características do carro.
