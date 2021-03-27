@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import joblib
 import os
+from datetime import date
 from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
@@ -14,35 +15,36 @@ standard_to = StandardScaler()
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    Fuel_Type_Diesel=0
+    fuel_type_diesel=0
     if request.method == 'POST':
-        Year = int(request.form['Year'])
-        Year = (2021 - Year)
-        Present_Price=float(request.form['Present_Price'])
-        Kms_Driven=int(request.form['Kms_Driven'])
-        Owner=int(request.form['Owner'])
+        current_date = date.today()
+        year = int(request.form['Year'])
+        year = (current_date.year - year)
+        present_price=float(request.form['Present_Price'])
+        kms_driven=int(request.form['Kms_Driven'])
+        owner=int(request.form['Owner'])
 
-        Fuel_Type_Petrol=request.form['Fuel_Type_Petrol']
-        if(Fuel_Type_Petrol=='Petrol'):
-                Fuel_Type_Petrol=1
-                Fuel_Type_Diesel=0
+        fuel_type_petrol=request.form['Fuel_Type_Petrol']
+        if(fuel_type_petrol=='Petrol'):
+                fuel_type_petrol=1
+                fuel_type_diesel=0
         else:
-            Fuel_Type_Petrol=0
-            Fuel_Type_Diesel=1
+            fuel_type_petrol=0
+            fuel_type_diesel=1
 
-        Seller_Type_Individual=request.form['Seller_Type_Individual']
-        if(Seller_Type_Individual=='Individual'):
-            Seller_Type_Individual=1
+        seller_type_individual=request.form['Seller_Type_Individual']
+        if(seller_type_individual=='Individual'):
+            seller_type_individual=1
         else:
-            Seller_Type_Individual=0
+            seller_type_individual=0
 
-        Transmission_Mannual=request.form['Transmission_Mannual']
-        if(Transmission_Mannual=='Mannual'):
-            Transmission_Mannual=1
+        transmission_mannual=request.form['Transmission_Mannual']
+        if(transmission_mannual=='Mannual'):
+            transmission_mannual=1
         else:
-            Transmission_Mannual=0
+            transmission_mannual=0
 
-        prediction = model.predict([[Present_Price,Kms_Driven,Owner,Year,Fuel_Type_Diesel,Fuel_Type_Petrol,Seller_Type_Individual,Transmission_Mannual]])
+        prediction = model.predict([[present_price,kms_driven,owner,year,fuel_type_diesel,fuel_type_petrol,seller_type_individual,transmission_mannual]])
         output=round(prediction[0],2)
 
         if output <= 0:

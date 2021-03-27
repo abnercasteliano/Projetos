@@ -15,36 +15,40 @@
             <p style="color:black;font-size:smaller;">Preencha os campos abaixo para que o algoritmo consiga prever o preço de venda do veículo.</p>
             <h3>Ano do veículo:</h3>
             <input id="first" name="Year" type="number ">
-            <h3>Preço de mercado do veículo?</h3><br><input id="second" name="Present_Price" required="required">
-            <h3>Quilômetragem rodada?</h3><input id="third" name="Kms_Driven" required="required">
-            <h3>Quantos donos o veículo teve? (0 ou 1 ou 3) ?</h3><br><input id="fourth" name="Owner" required="required">
-            <h3>Selecione o tipo de combustível:</h3><br><select name="Fuel_Type_Petrol" id="fuel" required="required">
+            <h3>Preço de mercado do veículo?</h3>
+            <input id="second" name="Present_Price" required="required">
+            <h3>Quilômetragem rodada?</h3>
+            <input id="third" name="Kms_Driven" required="required">
+            <h3>Quantos donos o veículo teve? (0 ou 1 ou 3) ?</h3>
+            <input id="fourth" name="Owner" required="required">
+            <h3>Selecione o tipo de combustível:</h3>
+            <select name="Fuel_Type_Petrol" id="fuel" required="required">
                 <option value="Petrol">Gasolina/Álcool</option>
                 <option value="Diesel">Diesel</option>
                 <option value="Diesel">Gás Natural</option>
             </select>
-            <h3>Você é pessoa física ou jurídica?</h3><br><select name="Seller_Type_Individual" id="resea" required="required">
+            <h3>Você é pessoa física ou jurídica?</h3>
+            <select name="Seller_Type_Individual" id="resea" required="required">
                 <option value="Dealer">Jurídica</option>
                 <option value="Individual">Física</option>
             </select>
-            <h3>Transmissão do veículo:</h3><br><select name="Transmission_Mannual" id="research" required="required">
+            <h3>Transmissão do veículo:</h3>
+            <select name="Transmission_Mannual" id="research" required="required">
                 <option value="Mannual">Manual</option>
                 <option value="Automatic">Automático</option>
             </select>
-            <br><br><button id="sub" type="submit ">Calcular preço!</button>
+            <br><button id="sub" type="submit ">Calcular preço!</button>
             <br>
         </form>
-	    <br><br>
-	    <h2 style="color: #2d7d25"> {{prediction_texts}} </h2>
+	    <br>
+            <h2 style="color: #2d7d25"> {{prediction_texts}} </h2>
     </div>
 
     <style>
     	h1 {
     		background-color: SkyBlue;
- 			width: 300px;
- 			height: 30px;
+    		width: auto;
   		    border: 3px solid powderblue;
-  		    padding: 30px;
   		    text-align:center;
   		    position: relative;
             margin: auto;
@@ -52,10 +56,9 @@
 
 	    h2 {
     		background-color: #9cffd4;
- 			width: 600px;
- 			height: 30px;
+ 			width: auto;
+ 			padding: 30px;
   		    border: 4px solid powderblue;
-  		    padding: 30px;
   		    text-align:center;
   		    position: relative;
             margin: auto;
@@ -66,31 +69,39 @@
             text-align: center;
             padding: auto;
         }
-        
-        #research {
-            font-size: 18px;
-            width: 100px;
-            height: 23px;
-            top: 23px;
-        }
-        
-        #box {
-            border-radius: 60px;
-            border-color: 45px;
-            border-style: solid;
-            font-family: cursive;
+
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
             text-align: center;
-            background-color: white;
-            font-size: medium;
-            position: absolute;
-            width: 700px;
-            bottom: 9%;
-            height: 850px;
-            right: 30%;
-            padding: auto;
-            margin: 0px;
-            font-size: 14px;
+            margin-top: 0.1em;
         }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 0.1em;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 0.1em;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 0.1em;
+        }
+        
         
         #fuel {
             width: 150px;
@@ -98,33 +109,36 @@
             text-align: center;
             border-radius: 14px;
             font-size: 18px;
+            margin-top: 0.1em;
         }
         
         #fuel:hover {
             background-color: white;
         }
-        
-        #research {
-            width: 115px;
-            height: 43px;
-            text-align: center;
-            border-radius: 14px;
-            font-size: 18px;
-        }
-        
-        #research:hover {
-            background-color: white;
-        }
-        
+               
         #resea {
             width: 115px;
             height: 43px;
             text-align: center;
             border-radius: 14px;
             font-size: 18px;
+            margin-top: 0.1em;
         }
         
         #resea:hover {
+            background-color: white;
+        }
+
+        #research {
+            width: 115px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            margin-top: 0.1em;
+        }
+        
+        #research:hover {
             background-color: white;
         }
         
@@ -134,38 +148,11 @@
             text-align: center;
             border-radius: 14px;
             font-size: 18px;
+            margin-top: 1.2em;
         }
         
         #sub:hover {
             background-color: SkyBlue;
-        }
-        
-        #first {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
-        }
-        
-        #second {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
-        }
-        
-        #third {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
-        }
-        
-        #fourth {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
         }
     </style>
 </body>

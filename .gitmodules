@@ -1,0 +1,3 @@
+[submodule "car-prediction"]
+	path = car-prediction
+	url = https://github.com/abnercasteliano/car-prediction
