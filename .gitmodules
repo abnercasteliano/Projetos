@@ -1,3 +1,6 @@
 [submodule "car-prediction"]
 	path = car-prediction
 	url = https://github.com/abnercasteliano/car-prediction
+[submodule "vehicle-price-prediction"]
+	path = vehicle-price-prediction
+	url = https://github.com/abnercasteliano/vehicle-price-prediction
