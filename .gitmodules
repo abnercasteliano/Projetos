@@ -4,3 +4,6 @@
 [submodule "vehicle-price-prediction"]
 	path = vehicle-price-prediction
 	url = https://github.com/abnercasteliano/vehicle-price-prediction
+[submodule "customer-churn"]
+	path = customer-churn
+	url = https://github.com/abnercasteliano/customer-churn.git
