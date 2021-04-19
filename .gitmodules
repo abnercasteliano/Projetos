@@ -7,3 +7,6 @@
 [submodule "customer-churn"]
 	path = customer-churn
 	url = https://github.com/abnercasteliano/customer-churn.git
+[submodule "Bayesian-A-B-testing"]
+	path = Bayesian-A-B-testing
+	url = https://github.com/abnercasteliano/Bayesian-A-B-testing
