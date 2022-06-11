@@ -1,0 +1,12 @@
+[submodule "turnover_classifier"]
+	path = turnover_classifier
+	url = https://github.com/abnercasteliano/turnover_classifier.git
+[submodule "rental_prediction"]
+	path = rental_prediction
+	url = https://github.com/abnercasteliano/rental_prediction.git
+[submodule "customer_clustering"]
+	path = customer_clustering
+	url = https://github.com/abnercasteliano/customer_clustering.git
+[submodule "movies_recommendation"]
+	path = movies_recommendation
+	url = https://github.com/abnercasteliano/movies_recommendation.git
