@@ -1,7 +1,7 @@
 # Meus Projetos
 Clique em um projeto do seu interesse para ver mais detalhes e resultados.
 
-## [Rental Predicting - Regressão Linear](https://github.com/abnercasteliano/rental_prediction/tree/e5b0af1ff4fe384f07630d4ad2557558195c1c6c)
+## [Rental Predicting - Regressão Linear](https://github.com/abnercasteliano/rental_prediction/tree/8c0e98038202c6bf7d395274c15b4761c72b3809)
 <p align="left"><img src="images/build.png" height="300" width="400"></p>
 
 Neste projeto foi desenvolvido uma aplicação de Machine Learning para predizer o preço do aluguel de um imóvel, de acordo os atributos informados pelo usuário.
@@ -16,7 +16,7 @@ Foi realizado uma análise exploratória dos dados da empresa e criou-se uma apl
 
 Nesse projeto foi feita a análise de um conjunto de dados dos clientes de uma empresa (do Kaggle), onde implementei um modelo de aprendizagem não supervisionada que é capaz de agrupar os clientes em diferentes grupos.
 
-## [Sistema de Recomendação de Filmes]()
+## [Sistema de Recomendação de Filmes](https://github.com/abnercasteliano/movies_recommendation/tree/5ab384f951c8339af328db18b01ae296faf32fee)
 <p align="left"><img src="images/reco.png" height="300" width="400"></p>
 
 Nesse projeto foi implementado um Sistema de Recomendação de Filmes utilizando Filtragem Colaborativa e o algoritmo de Machine Learning KNN.
