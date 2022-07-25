@@ -19,4 +19,4 @@ Nesse projeto foi feita a análise de um conjunto de dados dos clientes de uma e
 ## [Sistema de Recomendação de Filmes](https://github.com/abnercasteliano/movies_recommendation/tree/5ab384f951c8339af328db18b01ae296faf32fee)
 <p align="left"><img src="images/reco.png" height="300" width="400"></p>
 
-Nesse projeto foi implementado um Sistema de Recomendação de Filmes utilizando Filtragem Colaborativa e o algoritmo de Machine Learning KNN.
+Nesse projeto foi criado um Sistema de Recomendação de Filmes utilizando Filtragem Colaborativa e o algoritmo de Machine Learning KNN.
